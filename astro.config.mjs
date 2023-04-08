@@ -3,6 +3,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://abjt14.github.io/web-inspirations',
-  base: '/',
+  site: 'https://abjt14.github.io',
+  base: '/web-inspirations',
 });
