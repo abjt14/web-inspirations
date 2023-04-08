@@ -1,9 +1,5 @@
 ---
-export interface Props {
-	title: string;
-}
 
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,25 +7,29 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<link rel="icon" href="favicon.svg">
+
+		<!-- Primary Meta Tags -->
+		<title>Web Inspirations</title>
+		<meta name="title" content="Web Inspirations">
+		<meta name="description" content="A curated list of good-looking websites.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://abjt14.github.io/web-inspirations">
+		<meta property="og:title" content="Web Inspirations">
+		<meta property="og:description" content="A curated list of good-looking websites.">
+		<meta property="og:image" content="https://raw.githubusercontent.com/abjt14/web-inspirations/main/screenshot.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://abjt14.github.io/web-inspirations">
+		<meta property="twitter:title" content="Web Inspirations">
+		<meta property="twitter:description" content="A curated list of good-looking websites.">
+		<meta property="twitter:image" content="https://raw.githubusercontent.com/abjt14/web-inspirations/main/screenshot.jpg">
 	</head>
-	<body>
+	<body class="bg-neutral-950 m-4">
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
+<style is:global></style>
