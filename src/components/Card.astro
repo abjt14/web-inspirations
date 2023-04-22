@@ -19,21 +19,21 @@ const { id, url, title } = website;
 		<div class="image-container rounded-md overflow-hidden relative">
 			<picture>
 				<source
-					srcset={`/web-inspirations/images/@2x/${id}.jpg`}
+					srcset={`/web-inspirations-astro/images/@2x/${id}.jpg`}
 					type="image/jpeg"
 					media="(min-width: 420px)"
 					width="1440"
 					height="820"
 				/>
 				<source
-					srcset={`/web-inspirations/images/@4x/${id}.jpg`}
+					srcset={`/web-inspirations-astro/images/@4x/${id}.jpg`}
 					type="image/jpeg"
 					media="(min-width: 640px)"
 					width="2880"
 					height="1640"
 				/>
 				<img
-					src={`/web-inspirations/images/@1x/${id}.jpg`}
+					src={`/web-inspirations-astro/images/@1x/${id}.jpg`}
 					alt={title}
 					class="w-full h-auto object-cover transition-all duration-150 bg-neutral-950 text-neutral-200 text-xs"
 					width="720"
