@@ -1,5 +1,5 @@
 ## Web Inspirations Astro
-A curated list of good looking websites. Used as a reference for good UI and UX for building my [portfolio](https://github.com/abjt14/portfolio).
+A curated list of good looking websites. Used as a reference for good UI and UX for building my [portfolio](https://www.abjt.dev/).
 
 *This website is a prototype. A full-version built on NextJS is available [here](https://web-inspire.vercel.app/).*
 
